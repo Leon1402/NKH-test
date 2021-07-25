@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__top header-top">
+        <div class="container">
+          <ul class="header-top__list">
+            <li class="header-top__item">
+              <a href="#" class="header-top__link header-top__link_question">Задать вопрос</a>
+            </li>
+            <li class="header-top__item">
+              <a href="#" class="header-top__link  header-top__link_state">Проверить состояние заказа</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="header__menu menu">
+        <div class="container menu__container">
+          <div class="menu__block">
+            <button class="burger">
+              <span class="burger__item"></span>
+            </button>
+            <div class="menu__number number">
+              <img src="res/logo.png" alt="Мария" class="menu__logo header__logo">
+              <a href="#" class="number__link">8 800 100 31 31</a>
+              <span class="number__descr"> – по РФ бесплатно</span>
+            </div>
+          </div>
+
+          <ul class="menu__fixed-list">
+            <li class="menu__fixed-item">
+              <button href="#" class="menu__fixed-button">Кухни</button>
+            </li>
+            <li class="menu__fixed-item">
+              <button href="#" class="menu__fixed-button">Шкафы</button>
+            </li>
+            <li class="menu__fixed-item">
+              <button href="#" class="menu__fixed-button">Ванные</button>
+            </li>
+          </ul>
+          
+          <div class="menu__content">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link">Наши салоны</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Онлайн сервисы</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Услуги</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Акции</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Сотрудничество</a>
+              </li>
+            </ul>
+
+            <ul class="menu__buttons-list">
+              <li class="menu__buttons-item">
+                <a href="#" class="menu__location">Москва</a>
+              </li>
+              <li class="menu__buttons-item_order">
+                <button class="menu__button_order header__button">Заказать проект</button>
+              </li>
+              <li class="menu__buttons-item">
+                <button class="menu__button menu__button_search"></button>
+              </li>
+              <li class="menu__buttons-item menu__buttons-item_notification">
+                <button class="menu__button menu__button_notification"></button>
+              </li>
+              <li class="menu__buttons-item">
+                <button class="menu__button menu__button_profile"></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__bottom header-bottom">
+        <div class="container header-bottom__container">
+          <div class="header-bottom__block">
+            <img src="res/logo.png" alt="Мария" class="header-bottom__logo header__logo">
+
+            <button class="header__button">Заказать проект</button>
+          </div>
+          <div class="header-bottom__block">
+            <ul class="header-bottom__list">
+              <li class="header-bottom__item">
+                <button href="#" class="header-bottom__button header-bottom__button_active">Кухни</button>
+              </li>
+              <li class="header-bottom__item">
+                <button href="#" class="header-bottom__button">Шкафы</button>
+              </li>
+              <li class="header-bottom__item">
+                <button href="#" class="header-bottom__button">Ванные</button>
+              </li>
+            </ul>
+
+            <ul class="header-bottom__type-list">
+              <li class="header-bottom__type-item">
+                <button class="header-bottom__button">Современные<sup class="header-bottom__sup">43</sup></button> /
+              </li>
+              <li class="header-bottom__type-item">
+                <button class="header-bottom__button">Классические<sup class="header-bottom__sup">23</sup></button> /
+              </li>
+              <li class="header-bottom__type-item">
+                <button class="header-bottom__button">Неоклассика<sup class="header-bottom__sup">27</sup></button> /
+              </li>
+              <li class="header-bottom__type-item">
+                <button class="header-bottom__button">KarMa by Karim</button>
+              </li>
+              <li class="header-bottom__type-item">
+                <button class="header-bottom__button">Rashid<sup class="header-bottom__sup">15</sup></button> /
+              </li>
+              <li class="header-bottom__type-item">
+                <button class="header-bottom__button">Прованс<sup class="header-bottom__sup">18</sup></button> /
+              </li>
+              <li class="header-bottom__type-item">
+                <button class="header-bottom__button">Лофт<sup class="header-bottom__sup">14</sup></button> /
+              </li>
+              <li class="header-bottom__type-item">
+                <button class="header-bottom__button">Скандинавский стиль<sup
+                    class="header-bottom__sup">12</sup></button> /
+              </li>
+              <li class="header-bottom__type-item">
+                <button class="header-bottom__button">Хай-тек<sup class="header-bottom__sup">11</sup></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero__main-swiper swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide hero__main-slide hero__main-slide_1"></div>
+          <div class="swiper-slide hero__main-slide hero__main-slide_2"></div>
+          <div class="swiper-slide hero__main-slide hero__main-slide_3"></div>
+        </div>
+        <a href="#" class="hero__present present">
+          <img src="" alt="Bosch" class="present__image">
+          <p class="present__text">
+            Посудомоечная машина в подарок <span class="portfolio__symbol">></span>
+          </p>
+        </a>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="hero__block">
+        <a href="#" class="hero__portfolio portfolio">
+          <h2 class="portfolio__title">Портфолио</h2>
+          <p class="portfolio__text">
+            Выбери свой проект и дизайнера! <span class="portfolio__symbol">></span>
+          </p>
+        </a>
+        <div class="hero__swiper swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide hero__slide hero__slide_1"></div>
+            <div class="swiper-slide hero__slide hero__slide_2"></div>
+            <div class="swiper-slide hero__slide hero__slide_3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
