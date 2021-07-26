@@ -54,12 +54,48 @@
     background-color: #FFFFFF;
     box-shadow: 0px 55px 54px rgba(0, 0, 0, 0.15);
     z-index: 100;
+    &__image {
+        width: 180px;
+        height: 42px;
+        margin-bottom: 69px;
+    }
+    &__text-block {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        line-height: 140%;
+    }
+    &__text {
+        width: 304px;
+    }
+    &__symbol {
+        background-color: #CE3730;
+    }
 }
 
 .portfolio {
-    width: 385px;
+    max-width: 60%;
     margin-bottom: 30px;
     padding: 26px 30px;
     color: #FFF;
     background-color: #CE3730;
+    &__title {
+        font-size: 26px;
+        line-height: 140%;
+        margin-bottom: 60px;
+    }
+    &__text-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__text {
+        width: 165px;
+    }
+    &__symbol {
+        background-color: #FFF;
+        &::before {
+            border-color: #000 !important;
+        }
+    }
 }

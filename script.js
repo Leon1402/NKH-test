@@ -33,3 +33,15 @@ window.addEventListener('scroll', (e) => {
         header.classList.remove('menu-fixed')
     }
 })
+
+const modal = document.querySelector('.burger-modal')
+const burger = document.querySelector('.burger')
+const burgerClose = document.querySelector('.burger-close')
+
+burger.addEventListener('click', () => {
+    modal.classList.add('burger-modal_active')
+})
+
+burgerClose.addEventListener('click', () => {
+    modal.classList.remove('burger-modal_active')
+})
