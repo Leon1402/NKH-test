@@ -9,7 +9,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -85,7 +86,7 @@
                 <button class="menu__button_order header__button">Заказать проект</button>
               </li>
               <li class="menu__buttons-item">
-                <button class="menu__button menu__button_search search"></button>
+                <button class="menu__button menu__button_search search-button"></button>
               </li>
               <li class="menu__buttons-item menu__buttons-item_notification">
                 <button class="menu__button menu__button_notification"></button>
@@ -95,6 +96,13 @@
               </li>
             </ul>
           </div>
+        </div>
+      </div>
+
+      <div class="header__search search">
+        <div class="search__container">
+          <input type="text" class="search__input">
+          <button class="search__button">Найти</button>
         </div>
       </div>
 
@@ -154,15 +162,16 @@
     </header>
 
     <div class="burger-modal">
+      <div class="container burger-modal__container">
       <div class="burger-menu">
-        <div class="container burger-menu__container">
+        <div class="burger-menu__container">
           <div class="burger-menu__block">
             <button class="burger-close">
             </button>
             <div class="burger-menu__number number">
               <img src="res/logo.png" alt="Мария" class="burger-menu__logo">
               <a href="#" class="number__link">8 800 100 31 31 </a>
-              <span class="number__descr"> – по РФ бесплатно</span>
+              <span class="number__descr">– по РФ бесплатно</span>
             </div>
           </div>
 
@@ -175,7 +184,7 @@
                 <a href="#" class="burger-menu__location">Москва</a>
               </li>
               <li class="burger-menu__buttons-item">
-                <button class="burger-menu__button burger-menu__button_search search"></button>
+                <button class="burger-menu__button burger-menu__button_search search-butto"></button>
               </li>
               <li class="burger-menu__buttons-item burger-menu__buttons-item_notification">
                 <button class="burger-menu__button burger-menu__button_notification"></button>
@@ -185,6 +194,102 @@
               </li>
             </ul>
           </div>
+        </div>
+      </div>
+        <ul class="burger-modal__main-list">
+          <li class="burger-modal__main-item">О компании</li>
+          <li class="burger-modal__main-item">Услуги</li>
+          <li class="burger-modal__main-item burger-modal__main-item_active">Продукция</li>
+        </ul>
+        <div class="burger-modal__content">
+          <ul class="burger-modal__list">
+            <li class="burger-modal__item_title">Кухни</li>
+            <li class="burger-modal__item">Современные</li>
+            <li class="burger-modal__item">Классические</li>
+            <li class="burger-modal__item">Неоклассика</li>
+            <li class="burger-modal__item">KarMa by Karim Rashid</li>
+            <li class="burger-modal__item">Прованс</li>
+            <li class="burger-modal__item">Лофт</li>
+            <li class="burger-modal__item">Скандинавский стиль</li>
+            <li class="burger-modal__item">Хай-тек</li>
+          </ul>
+
+          <ul class="burger-modal__list">
+            <li class="burger-modal__item_title">Шкафы</li>
+            <li class="burger-modal__item">Купе</li>
+            <li class="burger-modal__item">Распашные</li>
+          </ul>
+
+          <ul class="burger-modal__list">
+            <li class="burger-modal__item_title">Ванные</li>
+            <li class="burger-modal__item">Для кухни</li>
+            <li class="burger-modal__item">Столовая группа</li>
+            <li class="burger-modal__item">Гостиная</li>
+            <li class="burger-modal__item">Спальня</li>
+            <li class="burger-modal__item">Для ванной</li>
+          </ul>
+
+          <ul class="burger-modal__list">
+            <li class="burger-modal__item_title">Мебель</li>
+            <li class="burger-modal__item">Для кухни</li>
+            <li class="burger-modal__item">Столовая группа</li>
+            <li class="burger-modal__item">Гостиная</li>
+            <li class="burger-modal__item">Спальня</li>
+            <li class="burger-modal__item">Для ванной</li>
+          </ul>
+
+          <ul class="burger-modal__list">
+            <li class="burger-modal__item_title">Бытовая техника</li>
+            <li class="burger-modal__item">Варочные панели</li>
+            <li class="burger-modal__item">Духовые шкафы</li>
+            <li class="burger-modal__item">Микроволновые печи</li>
+            <li class="burger-modal__item">Посудомоечные машины</li>
+            <li class="burger-modal__item">Холодильники</li>
+            <li class="burger-modal__item">Стиральные машины</li>
+            <li class="burger-modal__item">Кофемашины</li>
+            <li class="burger-modal__item">Компактные приборы</li>
+          </ul>
+
+          <ul class="burger-modal__list">
+            <li class="burger-modal__item_title">Оформление интерьера</li>
+            <li class="burger-modal__item">Вытяжки</li>
+            <li class="burger-modal__item">Мойки</li>
+            <li class="burger-modal__item">Смесители</li>
+            <li class="burger-modal__item">Посуда</li>
+            <li class="burger-modal__item">Настенные покрытия</li>
+          </ul>
+
+          <ul class="burger-modal__list">
+            <li class="burger-modal__item_title">B2B</li>
+            <li class="burger-modal__item">Кухни</li>
+            <li class="burger-modal__item">Стойки ресепшн</li>
+            <li class="burger-modal__item">Барные стойки</li>
+            <li class="burger-modal__item">Ванные</li>
+            <li class="burger-modal__item">Туалетные комнаты</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="burger-modal__block kitchen">
+        <div class="kitchen__item kitchen__item_1">
+          <a href="#" class="kitchen__price price">
+            <h2 class="price__title">Шкаф-купе Mix</h2>
+            <p class="price__text">Дуэт дизайна и практичности сочетающиеся в одной модели</p>
+            <div class="price__block">
+              <h3 class="price__value">от 79 125₽</h3>
+              <span class="price__symbol symbol"></span>
+            </div>
+          </a>
+        </div>
+        <div class="kitchen__item kitchen__item_2">
+          <a href="#" class="kitchen__price price">
+            <h2 class="price__title">Модель Nicolle</h2>
+            <p class="price__text">Изысканность классики в сочетании со строгостью линий модерна</p>
+            <div class="price__block">
+              <h3 class="price__value">от 22 400₽</h3>
+              <span class="price__symbol symbol"></span>
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -222,6 +327,46 @@
             <div class="swiper-slide hero__slide hero__slide_3"></div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="interior">
+      <div class="container interior__container">
+        <h2 class="interior__title">Создайте интерьер в едином стиле вместе с "Марией"</h2>
+        <p class="interior__text">
+          Мебельная фабрика "Мария" — меблировка "под ключ" в едином стиле по индивиальному проекту. Кухня, гостиная, ванная — в коллекциях новинок 2021 года!
+        </p>
+        <div class="interior__content">
+          <ul class="interior__list">
+            <li class="interior__item item">
+              <img src="res/interior1.jpg" alt="" class="item__image">
+              <h3 class="item__title">Кухня Jazz</h3>
+              <p class="item__text">Кухня + техника + столовая группа</p>
+            </li>
+            <li class="interior__item item">
+              <img src="res/interior2.jpg" alt="" class="item__image">
+              <h3 class="item__title">Кухня Jazz</h3>
+              <p class="item__text">Кухня + техника + столовая группа</p>
+            </li>
+          </ul>
+
+          <ul class="interior__list">
+            <li class="interior__item item">
+              <img src="res/interior3.jpg" alt="" class="item__image">
+              <h3 class="item__title">Белая кухня WHITE</h3>
+              <p class="item__text">Кухня + техника + столовая группа</p>
+            </li>
+            <li class="interior__item item">
+              <img src="res/interior4.jpg" alt="" class="item__image">
+              <h3 class="item__title">Белая кухня WHITE</h3>
+              <p class="item__text">Кухня + техника + столовая группа</p>
+            </li>
+          </ul>
+        </div>
+        <div class="interior__button-container">
+          <button class="interior__button">Показать еще</button>
+        </div>
+        
       </div>
     </section>
   </div>

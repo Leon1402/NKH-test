@@ -3,21 +3,62 @@
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100%;
+  margin: 0 auto;
   background-color: #FFF;
   z-index: 10000;
-  visibility: hidden;
   transition: opacity .3s ease-out;
   opacity: 0;
+  visibility: hidden;
   &_active {
-    visibility: visible;
     opacity: 1;
   }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  } 
+  &__container {
+    width: 100%;
+  }
+  &__main-list {
+    display: flex;
+    margin-bottom: 38px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: .3);
+  }
+  &__main-item {
+    margin-right: 70px;
+    padding-bottom: 23px;
+    cursor: pointer;
+    &_active {
+      color: #CE3730;
+      border-bottom: 3px solid #CE3730;
+    }
+  }
+  &__list {
+    margin-bottom: 4vh;
+  }
+  &__item {
+    font-weight: normal;
+    line-height: 170%;
+    cursor: pointer;
+    &_title {
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: 13px;
+    }
+  }
+
 }
 
 .burger-menu {
-  padding-top: 54px;
+  padding-top: 5vh;
+  padding-bottom: 4vh;
   &__container {
       display: flex;
       justify-content: space-between;
@@ -25,6 +66,7 @@
   &__block {
       display: flex;
       align-items: center;
+      position: relative;
   }
   &__number {
     align-items: center;
@@ -76,10 +118,11 @@
 }
 
 .burger-close {
-  position: relative;
+  position: absolute;
+  left: -60px;
   width: 18px;
   height: 18px;
-  margin-right: 20px;
+  margin-right: 40px;
   &::before {
     content: '';
     position: absolute;
@@ -97,5 +140,57 @@
     height: 2px;
     background-color: #000;
     transform: rotate(-45deg);
+  }
+}
+
+.kitchen {
+  display: flex;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  height: 425px;
+  &__item {
+    position: relative;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center;
+    transition: background-size .3s ease-out;
+    &_1 {
+      background-image: url(res/kitchen1.jpg);
+    }
+    &_2 {
+      background-image: url(res/kitchen2.jpg);
+    }
+    &:hover {
+      background-size: 110%;
+    }
+  }
+}
+
+.price {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  width: 370px;
+  background-color: #fff;
+  padding: 30px 35px;
+  &__title {
+    margin-bottom: 9px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 140%;
+    color: #CE3730;
+  }
+  &__text {
+    margin-bottom: 12px;
+  }
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__symbol {
+    background-color: #CE3730;
   }
 }

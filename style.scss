@@ -2,14 +2,18 @@
 @import 'header';
 @import 'hero';
 @import 'burger-modal';
+@import 'interior';
 
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 14px;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 h1, 
@@ -18,6 +22,10 @@ h3,
 p {
     margin: 0;
     padding: 0;
+}
+
+img {
+    width: 100%;
 }
 
 a {
@@ -40,6 +48,7 @@ ul {
 }
 
 .wrapper {
+    position: relative;
     max-width: 1600px;
     margin: auto;
 }
@@ -47,7 +56,8 @@ ul {
 .container {
     max-width: 1310px;
     padding: 0 10px;
-    margin: auto;
+    padding-left: 70px;
+    margin: 0 auto;
 }
 
 .symbol {
@@ -68,4 +78,15 @@ ul {
         border-right: 2px solid #FFFFFF;
         border-bottom: 2px solid #FFFFFF;
     }
+}
+
+.swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background-color: #FFFFFF;
+    opacity: 0.4;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
 }

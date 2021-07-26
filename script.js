@@ -40,8 +40,12 @@ const burgerClose = document.querySelector('.burger-close')
 
 burger.addEventListener('click', () => {
     modal.classList.add('burger-modal_active')
+    modal.style.visibility = 'visible'
 })
 
 burgerClose.addEventListener('click', () => {
     modal.classList.remove('burger-modal_active')
+    setTimeout(() => {
+        modal.style.visibility = 'hidden'
+    }, 300)
 })
