@@ -52,6 +52,7 @@ ul {
     position: relative;
     max-width: 1600px;
     margin: auto;
+    transition: transform .3s ease-out;
 }
 
 .container {
@@ -91,3 +92,14 @@ ul {
 .swiper-pagination-bullet-active {
     opacity: 1;
 }
+
+.main {
+    &_active {
+        margin-top: 114px;
+    }
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+  }

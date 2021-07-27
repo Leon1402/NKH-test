@@ -90,7 +90,7 @@
   }
   &__location {
       padding-left: 27px;
-      background-image: url(res/location.svg);
+      background-image: url(../res/location.svg);
       background-position: left center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -120,24 +120,24 @@
         background-color: #CE3730;
         &.burger-menu__button {
             &_search {
-                background-image: url(res/search_active.svg);
+                background-image: url(../res/search_active.svg);
             }
             &_profile {
-                background-image: url(res/profile_active.svg);
+                background-image: url(../res/profile_active.svg);
             }
             &_notification {
-                background-image: url(res/notification_active.svg);
+                background-image: url(../res/notification_active.svg);
             }
         }
     }
       &_search {
-          background-image: url(res/search.svg);
+          background-image: url(../res/search.svg);
       }
       &_profile {
-          background-image: url(res/profile.svg);
+          background-image: url(../res/profile.svg);
       }
       &_notification {
-          background-image: url(res/notification.svg);
+          background-image: url(../res/notification.svg);
       }
       &_order {
         margin-right: 2vw;
@@ -193,10 +193,10 @@
     background-position: center;
     transition: background-size .3s ease-out;
     &_1 {
-      background-image: url(res/kitchen1.jpg);
+      background-image: url(../res/kitchen1.jpg);
     }
     &_2 {
-      background-image: url(res/kitchen2.jpg);
+      background-image: url(../res/kitchen2.jpg);
     }
     &:hover {
       background-size: 110%;

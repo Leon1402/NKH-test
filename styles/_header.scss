@@ -42,16 +42,18 @@
             color: #aaa;
         }
         &_question {
-            background-image: url(res/question.svg);
+            background-image: url(../res/question.svg);
         }
         &_state {
-            background-image: url(res/state.svg);
+            background-image: url(../res/state.svg);
         }
     }
 }
 
 .menu {
     padding-top: 32px;
+    top:-80px;
+    transition: top .3s ease-out;
     &__container {
         display: flex;
         justify-content: space-between;
@@ -105,7 +107,7 @@
     &__location {
         margin-right: 10px;
         padding-left: 27px;
-        background-image: url(res/location.svg);
+        background-image: url(../res/location.svg);
         background-position: left center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -126,24 +128,24 @@
             background-color: #CE3730;
             &.menu__button {
                 &_search {
-                    background-image: url(res/search_active.svg);
+                    background-image: url(../res/search_active.svg);
                 }
                 &_profile {
-                    background-image: url(res/profile_active.svg);
+                    background-image: url(../res/profile_active.svg);
                 }
                 &_notification {
-                    background-image: url(res/notification_active.svg);
+                    background-image: url(../res/notification_active.svg);
                 }
             }
         }
         &_search {
-            background-image: url(res/search.svg);
+            background-image: url(../res/search.svg);
         }
         &_profile {
-            background-image: url(res/profile.svg);
+            background-image: url(../res/profile.svg);
         }
         &_notification {
-            background-image: url(res/notification.svg);
+            background-image: url(../res/notification.svg);
         }
         &_order {
             display: none;
@@ -279,6 +281,7 @@
 
 .header-bottom {
     padding: 45px 0 64px;
+    transition: margin .3s ease-out;
     &__container {
         display: flex;
         padding-left: 63px;
@@ -337,10 +340,6 @@
         opacity: 0.5;
         transition: color .3s ease-out;
     }
-}
-
-.menu-fixed+.header-bottom {
-    margin-top: 88px;
 }
 
 .search {
@@ -453,6 +452,6 @@
 .search-button {
     &_active {
         background-color: #CE3730;
-        background-image: url(res/search_active.svg);
+        background-image: url(../res/search_active.svg);
     }
 }

@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
@@ -134,21 +134,23 @@
                 <li class="helper__kitchen-item kitchen-info">
                   <img src="res/kitchen-info1.jpg" alt="" class="kitchen-info__logo">
                   <div class="kitchen-info__text">
-                  <p class="kitchen-info__text">Кухня Intuit</p>
-                  <p class="kitchen-info__text">цена от 175 806₽</p>
-                  <p class="kitchen-info__text kitchen-info__text_descr">Богемная лаконичность и глянец модели Intuit достигаются отсутствием ручек </p>
+                    <p class="kitchen-info__text">Кухня Intuit</p>
+                    <p class="kitchen-info__text">цена от 175 806₽</p>
+                    <p class="kitchen-info__text kitchen-info__text_descr">Богемная лаконичность и глянец модели Intuit
+                      достигаются отсутствием ручек </p>
                   </div>
                 </li>
                 <li class="helper__kitchen-item kitchen-info">
                   <img src="res/kitchen-info2.jpg" alt="" class="kitchen-info__logo">
                   <div class="kitchen-info__text">
-                  <p class="kitchen-info__text">Кухня Rimini</p>
-                  <p class="kitchen-info__text">цена от 204 982₽</p>
-                  <p class="kitchen-info__text kitchen-info__text_descr">Богемная лаконичность и глянец модели Intuit достигаются отсутствием ручек </p>
+                    <p class="kitchen-info__text">Кухня Rimini</p>
+                    <p class="kitchen-info__text">цена от 204 982₽</p>
+                    <p class="kitchen-info__text kitchen-info__text_descr">Богемная лаконичность и глянец модели Intuit
+                      достигаются отсутствием ручек </p>
                   </div>
                 </li>
               </ul>
-            </div> 
+            </div>
           </div>
         </div>
       </div>
@@ -210,39 +212,39 @@
 
     <div class="burger-modal">
       <div class="container burger-modal__container">
-      <div class="burger-menu">
-        <div class="burger-menu__container">
-          <div class="burger-menu__block">
-            <button class="burger-close">
-            </button>
-            <div class="burger-menu__number number">
-              <img src="res/logo.png" alt="Мария" class="burger-menu__logo">
-              <a href="#" class="number__link">8 800 100 31 31 </a>
-              <span class="number__descr">– по РФ бесплатно</span>
+        <div class="burger-menu">
+          <div class="burger-menu__container">
+            <div class="burger-menu__block">
+              <button class="burger-close">
+              </button>
+              <div class="burger-menu__number number">
+                <img src="res/logo.png" alt="Мария" class="burger-menu__logo">
+                <a href="#" class="number__link">8 800 100 31 31 </a>
+                <span class="number__descr">– по РФ бесплатно</span>
+              </div>
+            </div>
+
+            <div class="burger-menu__content">
+              <ul class="burger-menu__buttons-list">
+                <li class="burger-menu__buttons-item_order">
+                  <button class="burger-menu__button_order header__button">Заказать проект</button>
+                </li>
+                <li class="burger-menu__buttons-item">
+                  <a href="#" class="burger-menu__location">Москва</a>
+                </li>
+                <li class="burger-menu__buttons-item">
+                  <button class="burger-menu__button burger-menu__button_search search-button"></button>
+                </li>
+                <li class="burger-menu__buttons-item burger-menu__buttons-item_notification">
+                  <button class="burger-menu__button burger-menu__button_notification"></button>
+                </li>
+                <li class="burger-menu__buttons-item">
+                  <button class="burger-menu__button burger-menu__button_profile"></button>
+                </li>
+              </ul>
             </div>
           </div>
-
-          <div class="burger-menu__content">
-            <ul class="burger-menu__buttons-list">
-              <li class="burger-menu__buttons-item_order">
-                <button class="burger-menu__button_order header__button">Заказать проект</button>
-              </li>
-              <li class="burger-menu__buttons-item">
-                <a href="#" class="burger-menu__location">Москва</a>
-              </li>
-              <li class="burger-menu__buttons-item">
-                <button class="burger-menu__button burger-menu__button_search search-button"></button>
-              </li>
-              <li class="burger-menu__buttons-item burger-menu__buttons-item_notification">
-                <button class="burger-menu__button burger-menu__button_notification"></button>
-              </li>
-              <li class="burger-menu__buttons-item">
-                <button class="burger-menu__button burger-menu__button_profile"></button>
-              </li>
-            </ul>
-          </div>
         </div>
-      </div>
         <ul class="burger-modal__main-list">
           <li class="burger-modal__main-item">О компании</li>
           <li class="burger-modal__main-item">Услуги</li>
@@ -316,7 +318,7 @@
           </ul>
         </div>
       </div>
-      
+
       <div class="burger-modal__block kitchen">
         <div class="kitchen__item kitchen__item_1">
           <a href="#" class="kitchen__price price">
@@ -341,81 +343,108 @@
       </div>
     </div>
 
-    <section class="hero">
-      <div class="hero__main-swiper swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide hero__main-slide hero__main-slide_1"></div>
-          <div class="swiper-slide hero__main-slide hero__main-slide_2"></div>
-          <div class="swiper-slide hero__main-slide hero__main-slide_3"></div>
-        </div>
-        <a href="#" class="hero__present present">
-          <img src="res/bosch.png" alt="Bosch" class="present__image">
-          <div class="present__text-block">
-            <p class="present__text">Посудомоечная машина в подарок</p>
-            <span class="present__symbol symbol"></span>
-          </div>
-        </a>
-        <div class="swiper-pagination"></div>
-      </div>
-
-      <div class="hero__block">
-        <a href="#" class="hero__portfolio portfolio">
-          <h2 class="portfolio__title">Портфолио</h2>
-          <div class="portfolio__text-block">
-            <p class="portfolio__text">Выбери свой проект и дизайнера!</p>
-            <span class="portfolio__symbol symbol"></span>
-          </div>
-
-        </a>
-        <div class="hero__swiper swiper-container">
+    <main class="main">
+      <section class="hero">
+        <div class="hero__main-swiper swiper-container">
           <div class="swiper-wrapper">
-            <div class="swiper-slide hero__slide hero__slide_1"></div>
-            <div class="swiper-slide hero__slide hero__slide_2"></div>
-            <div class="swiper-slide hero__slide hero__slide_3"></div>
+            <div class="swiper-slide hero__main-slide hero__main-slide_1"></div>
+            <div class="swiper-slide hero__main-slide hero__main-slide_2"></div>
+            <div class="swiper-slide hero__main-slide hero__main-slide_3"></div>
+          </div>
+          <div class="hero__present-swiper swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide hero__present-slide">
+                <a href="#" class="hero__present present swiper-slide">
+                  <img src="res/bosch.png" alt="Bosch" class="present__image">
+                  <div class="present__text-block">
+                    <p class="present__text">Посудомоечная машина в подарок</p>
+                    <span class="present__symbol symbol"></span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide hero__present-slide">
+                <a href="#" class="hero__present present">
+                  <img src="res/bosch.png" alt="Bosch" class="present__image">
+                  <div class="present__text-block">
+                    <p class="present__text">Посудомоечная машина в подарок</p>
+                    <span class="present__symbol symbol"></span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide hero__present-slide">
+                <a href="#" class="hero__present present swiper-slide hero__present-slide">
+                  <img src="res/bosch.png" alt="Bosch" class="present__image">
+                  <div class="present__text-block">
+                    <p class="present__text">Посудомоечная машина в подарок</p>
+                    <span class="present__symbol symbol"></span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+        <div class="swiper-pagination"></div>
+  </div>
 
-    <section class="interior">
-      <div class="container interior__container">
-        <h2 class="interior__title">Создайте интерьер в едином стиле вместе с "Марией"</h2>
-        <p class="interior__text">
-          Мебельная фабрика "Мария" — меблировка "под ключ" в едином стиле по индивиальному проекту. Кухня, гостиная, ванная — в коллекциях новинок 2021 года!
-        </p>
-        <div class="interior__content">
-          <ul class="interior__list">
-            <li class="interior__item item">
-              <img src="res/interior1.jpg" alt="" class="item__image">
-              <a href="#" class="item__title">Кухня Jazz</a>
-              <p class="item__text">Кухня + техника + столовая группа</p>
-            </li>
-            <li class="interior__item item">
-              <img src="res/interior2.jpg" alt="" class="item__image">
-              <a href="#" class="item__title">Кухня Jazz</a>
-              <p class="item__text">Кухня + техника + столовая группа</p>
-            </li>
-          </ul>
-
-          <ul class="interior__list">
-            <li class="interior__item item">
-              <img src="res/interior3.jpg" alt="" class="item__image">
-              <a href="#" class="item__title">Белая кухня WHITE</a>
-              <p class="item__text">Кухня + техника + столовая группа</p>
-            </li>
-            <li class="interior__item item">
-              <img src="res/interior4.jpg" alt="" class="item__image">
-              <a href="#" class="item__title">Белая кухня WHITE</a>
-              <p class="item__text">Кухня + техника + столовая группа</p>
-            </li>
-          </ul>
-        </div>
-        <div class="interior__button-container">
-          <button class="interior__button">Показать еще</button>
-        </div>
-        
+  <div class="hero__block">
+    <a href="#" class="hero__portfolio portfolio">
+      <h2 class="portfolio__title">Портфолио</h2>
+      <div class="portfolio__text-block">
+        <p class="portfolio__text">Выбери свой проект и дизайнера!</p>
+        <span class="portfolio__symbol symbol"></span>
       </div>
-    </section>
+
+    </a>
+    <div class="hero__swiper swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide hero__slide hero__slide_1"></div>
+        <div class="swiper-slide hero__slide hero__slide_2"></div>
+        <div class="swiper-slide hero__slide hero__slide_3"></div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section class="interior">
+    <div class="container interior__container">
+      <h2 class="interior__title">Создайте интерьер в едином стиле вместе с "Марией"</h2>
+      <p class="interior__text">
+        Мебельная фабрика "Мария" — меблировка "под ключ" в едином стиле по индивиальному проекту. Кухня, гостиная,
+        ванная — в коллекциях новинок 2021 года!
+      </p>
+      <div class="interior__content">
+        <ul class="interior__list">
+          <li class="interior__item item">
+            <img src="res/interior1.jpg" alt="" class="item__image">
+            <a href="#" class="item__title">Кухня Jazz</a>
+            <p class="item__text">Кухня + техника + столовая группа</p>
+          </li>
+          <li class="interior__item item">
+            <img src="res/interior2.jpg" alt="" class="item__image">
+            <a href="#" class="item__title">Кухня Jazz</a>
+            <p class="item__text">Кухня + техника + столовая группа</p>
+          </li>
+        </ul>
+
+        <ul class="interior__list">
+          <li class="interior__item item">
+            <img src="res/interior3.jpg" alt="" class="item__image">
+            <a href="#" class="item__title">Белая кухня WHITE</a>
+            <p class="item__text">Кухня + техника + столовая группа</p>
+          </li>
+          <li class="interior__item item">
+            <img src="res/interior4.jpg" alt="" class="item__image">
+            <a href="#" class="item__title">Белая кухня WHITE</a>
+            <p class="item__text">Кухня + техника + столовая группа</p>
+          </li>
+        </ul>
+      </div>
+      <div class="interior__button-container">
+        <button class="interior__button">Показать еще</button>
+      </div>
+
+    </div>
+  </section>
+  </main>
   </div>
 
   <script src="script.js"></script>
