@@ -43,9 +43,57 @@ burger.addEventListener('click', () => {
     modal.style.visibility = 'visible'
 })
 
-burgerClose.addEventListener('click', () => {
+const burgerClosed = () => {
     modal.classList.remove('burger-modal_active')
     setTimeout(() => {
         modal.style.visibility = 'hidden'
     }, 300)
+}
+
+burgerClose.addEventListener('click', burgerClosed)
+
+const searchButtons = document.querySelectorAll('.search-button');
+const search = document.querySelector('.search');
+const input = document.querySelector('.search__input')
+const content = document.querySelector('.search__content')
+
+const menuContent = document.querySelector('.menu__content')
+
+for (const item of searchButtons) {
+    item.addEventListener('click', (e) => {
+        burgerClosed()
+        search.classList.toggle('search_active');
+        searchButtons.forEach((item) => {
+            item.classList.toggle('search-button_active')
+        })
+        e._isSearchClicked = true
+        input.focus()
+    })
+}
+
+input.addEventListener('focus', () => {
+    content.classList.add('search__content_active');
+    content.style.visibility = 'visible'
+});
+
+input.addEventListener('blur', () => {
+    content.classList.remove('search__content_active');
+    setTimeout(() => {
+        content.style.visibility = 'hidden'
+    } ,300)
+});
+
+search.addEventListener('click', (e) => {
+    e._isSearchClicked = true;
 })
+
+window.addEventListener('click', (e) => {
+    if (!e._isSearchClicked) {
+        search.classList.remove('search_active')
+        searchButtons.forEach((item) => {
+            item.classList.remove('search-button_active')
+        })
+    }
+        
+})
+

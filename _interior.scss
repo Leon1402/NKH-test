@@ -34,6 +34,12 @@
     border: 2px solid #CE3730;
     border-radius: 33px;
     font-weight: 600;
+    transition: color .3s ease-out, background-color .3s ease-out, border-color .3s ease-out;
+    &:hover {
+      color: #fff;
+      background-color: #CE3730;
+      border-color: #fff;
+    }
   }
 }
 
@@ -43,11 +49,20 @@
   border-bottom: 1px solid #000;
   &__image {
     margin-bottom: 20px;
+    transition: transform .3s ease-out;
+    &:hover {
+      transform: scale(.97);
+    }
   }
   &__title {
+    display: block;
     margin-bottom: 5px;
     font-weight: bold;
     font-size: 20px;
     line-height: 140%;
+    transition: color .3s ease-out;
+    &:hover {
+      color: #CE3730;
+    }
   }
 }
