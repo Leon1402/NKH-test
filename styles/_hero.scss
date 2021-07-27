@@ -57,14 +57,11 @@
     }
     &__present-slide {
         padding: 35px;
+        background-color: #FFFFFF;
     }
 }
 
 .present {
-    transition: opacity .3s ease-out;
-    &:hover {
-        opacity: .8;
-    }
     &__image {
         width: 180px;
         height: 42px;

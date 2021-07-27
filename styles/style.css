@@ -1020,15 +1020,7 @@ template {
 
 .hero__present-slide {
   padding: 35px;
-}
-
-.present {
-  -webkit-transition: opacity .3s ease-out;
-  transition: opacity .3s ease-out;
-}
-
-.present:hover {
-  opacity: .8;
+  background-color: #FFFFFF;
 }
 
 .present__image {
