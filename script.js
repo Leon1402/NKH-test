@@ -59,6 +59,8 @@ const content = document.querySelector('.search__content')
 
 const menuContent = document.querySelector('.menu__content')
 
+let flag = true
+
 for (const item of searchButtons) {
     item.addEventListener('click', (e) => {
         burgerClosed()
@@ -67,13 +69,15 @@ for (const item of searchButtons) {
             item.classList.toggle('search-button_active')
         })
         e._isSearchClicked = true
-        input.focus()
+        if (flag)
+            input.focus()
+        flag = !flag
     })
 }
 
 input.addEventListener('focus', () => {
     content.classList.add('search__content_active');
-    content.style.visibility = 'visible'
+    content.style.visibility = 'visible';
 });
 
 input.addEventListener('blur', () => {
@@ -93,7 +97,7 @@ window.addEventListener('click', (e) => {
         searchButtons.forEach((item) => {
             item.classList.remove('search-button_active')
         })
+        flag = true
     }
-        
 })
 
